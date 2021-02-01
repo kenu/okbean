@@ -20,6 +20,8 @@ public class BeanApplication implements CommandLineRunner {
  	MemberQuadam36 quadam36;
 	@Autowired
 	MemberD36choi memberD36choi;
+	@Autowired
+	MemberSeokkie seokkie;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeanApplication.class, args);
@@ -34,5 +36,6 @@ public class BeanApplication implements CommandLineRunner {
 		marc.displayInfo();
 		quadam36.displayInfo();
 		memberD36choi.displayInfo();
+		seokkie.displayInfo();
 	}
 }
