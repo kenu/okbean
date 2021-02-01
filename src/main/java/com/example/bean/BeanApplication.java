@@ -21,6 +21,7 @@ public class BeanApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        System.out.println("1. CommandLineRunner");
         kenu.displayInfo();
         gyumin.displayInfo();
     }
