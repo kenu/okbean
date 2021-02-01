@@ -15,13 +15,15 @@ public class BeanApplication implements CommandLineRunner {
 	@Autowired
 	MemberCovenant covenant;
 	@Autowired 
-  MemberMarc marc;
+  	MemberMarc marc;
 	@Autowired 
  	MemberQuadam36 quadam36;
 	@Autowired
 	MemberD36choi memberD36choi;
 	@Autowired
 	MemberSeokkie seokkie;
+	@Autowired
+	MemberMk0324 mk0324;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeanApplication.class, args);
@@ -37,5 +39,6 @@ public class BeanApplication implements CommandLineRunner {
 		quadam36.displayInfo();
 		memberD36choi.displayInfo();
 		seokkie.displayInfo();
+		mk0324.displayInfo();
 	}
 }
