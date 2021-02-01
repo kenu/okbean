@@ -8,7 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BeanApplication implements CommandLineRunner {
 
-	@Autowired MemberKenu kenu;
+	@Autowired
+	MemberKenu kenu;
+	@Autowired
+	MemberBobae bobae;
+	@Autowired
+	MemberCovenant covenant;
 	@Autowired MemberMarc marc;
 
 	public static void main(String[] args) {
@@ -18,6 +23,9 @@ public class BeanApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		kenu.displayInfo();
+		covenant.displayInfo();
+		// add line
+		bobae.displayInfo();
 		marc.displayInfo();
 	}
 }
