@@ -12,7 +12,9 @@ public class BeanApplication implements CommandLineRunner {
 	MemberKenu kenu;
 	@Autowired
 	MemberBobae bobae;
+	@Autowired
 	MemberCovenant covenant;
+	@Autowired MemberMarc marc;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeanApplication.class, args);
@@ -24,5 +26,6 @@ public class BeanApplication implements CommandLineRunner {
 		covenant.displayInfo();
 		// add line
 		bobae.displayInfo();
+		marc.displayInfo();
 	}
 }
