@@ -10,6 +10,8 @@ public class BeanApplication implements CommandLineRunner {
 
 	@Autowired
 	MemberKenu kenu;
+	@Autowired
+	MemberCovenant covenant;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeanApplication.class, args);
@@ -18,6 +20,7 @@ public class BeanApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		kenu.displayInfo();
+		covenant.displayInfo();
 		// add line
 	}
 }
