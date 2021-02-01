@@ -10,6 +10,8 @@ public class BeanApplication implements CommandLineRunner {
 
 	@Autowired
 	MemberKenu kenu;
+	@Autowired
+	MemberQuadam36 quadam36;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeanApplication.class, args);
@@ -19,5 +21,6 @@ public class BeanApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		kenu.displayInfo();
 		// add line
+		quadam36.displayInfo();
 	}
 }
