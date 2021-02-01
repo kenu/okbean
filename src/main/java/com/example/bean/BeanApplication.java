@@ -11,6 +11,16 @@ public class BeanApplication implements CommandLineRunner {
 	@Autowired
 	MemberKenu kenu;
 	@Autowired
+	MemberBobae bobae;
+	@Autowired
+	MemberCovenant covenant;
+	@Autowired 
+  MemberMarc marc;
+	@Autowired 
+ 	MemberQuadam36 quadam36;
+	@Autowired
+	MemberD36choi memberD36choi;
+	@Autowired
 	MemberSeokkie seokkie;
 
 	public static void main(String[] args) {
@@ -20,6 +30,12 @@ public class BeanApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		kenu.displayInfo();
+		covenant.displayInfo();
+		// add line
+		bobae.displayInfo();
+		marc.displayInfo();
+		quadam36.displayInfo();
+		memberD36choi.displayInfo();
 		seokkie.displayInfo();
 	}
 }
