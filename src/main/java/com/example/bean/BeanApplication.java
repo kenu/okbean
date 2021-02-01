@@ -11,6 +11,7 @@ public class BeanApplication implements CommandLineRunner {
 	@Autowired
 	MemberKenu kenu;
 	@Autowired
+	MemberBobae bobae;
 	MemberCovenant covenant;
 
 	public static void main(String[] args) {
@@ -22,5 +23,6 @@ public class BeanApplication implements CommandLineRunner {
 		kenu.displayInfo();
 		covenant.displayInfo();
 		// add line
+		bobae.displayInfo();
 	}
 }
